@@ -1,0 +1,320 @@
+/* Page layout & Sizing*/
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html, body {
+	margin: 0;
+	margin-bottom: 2%;
+	background-color: #000000;
+}
+
+header, header a, main h3 {
+	text-align: center;
+	color: #EDF2F4;
+}
+
+/* Compacted-visuals-section */
+.facil article, .city-nav {
+	border-radius: 10px;
+}
+
+
+.course-info article, .course-info, .life-travel article, .facil-info, .facil, .life-travel div, .facil img, .form, footer{
+	border-radius: 10px;
+	margin: 5%;
+}
+
+/* Navigation Bar */
+details.nav[open] > summary {
+	opacity: 0.5;
+}
+
+.nav details[open] summary {
+	opacity: 0.5;
+}
+
+.nav a:hover {
+	color:#000000;
+	font-weight:bolder;
+}
+
+.back-home summary a span {
+	content: url('images/home-button-white-icon.png');
+	width: 5%;
+	vertical-align: middle;
+}
+
+.back-home summary::marker {
+	content: none;
+}
+
+.nav {
+	background-image: linear-gradient(#D90429 60%,#000000);
+	background-repeat: no-repeat;
+	background-size:contain;
+	line-height: 400%;
+	vertical-align: middle;
+}
+
+/* Sections */
+.course-info, .course-info article, .life-travel article {
+	border: solid #EDF2F4 2px;
+	padding: 5%;
+	background-color: #EDF2F4;
+	text-align: center;
+}
+
+.course-info {
+	background-image: radial-gradient(farthest-corner, #d90429 5%, #000000 85%);
+}
+
+.life-travel {
+	background-image: url('');
+}
+
+.life-travel a {
+	color: #000000;
+}
+
+.life-travel div {
+	background: radial-gradient(#000000,#d90429,#000000);
+	padding: 1%;
+}
+
+.facil, .facil-info {
+	text-align: center;
+	border: solid #ef233c 3px;
+	overflow: hidden;
+	background-color: #EDF2F4;
+}
+
+.facil img, .home-iframe {
+	width: 90%;
+}
+
+.facil h3, .facil, .facil-info {
+	color: #000000;
+}
+
+.home-iframe {
+	padding: 1%;
+	height: 90%;
+	margin-bottom: 5%;
+}
+
+footer {
+	text-align: center;
+	color: #EDF2F4;
+}
+
+.city-nav {
+	flex: 1;
+	flex-basis: 100%;
+	padding: 2%;
+	width: 100%;
+	height: 500px;
+}
+
+img {
+	width: 100%;
+}
+
+/* Modal */
+button.contact {
+	scale: 2;
+	padding:0%;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+button.contact::before {
+	content: '📧';
+}
+
+
+:modal {
+	background-image:  radial-gradient(#000000,#d90429,#000000);
+	background-repeat: no-repeat;
+	color:#EDF2F4;
+	width: 80%;
+	height: 30%;
+	border-radius: 10px;
+}
+
+.modal article{
+	background-color: #EDF2F4;
+	color:#000000;
+	border-radius: 10px;
+	margin: 5%;
+	padding: 5%;
+}
+
+.dev-contact p::before {
+	content:'📧';
+}
+
+.dev-contact article h3, .dev-contact p {
+	margin: 0;
+}
+
+::backdrop {
+	background-image: linear-gradient(#000000,transparent);
+	opacity: 0.7;
+}
+
+/* Responsive Design (Desktop) */
+@media (min-width: 700px) {
+	h3.title, .facil section article {
+		flex: 1;
+		flex-basis: 100%;
+	}
+
+	section.course-info article, .facil section, footer section.wrapper {
+		flex: 1;
+		flex-basis: 20%;
+		margin: 1%;
+	}
+
+	main .wrapper, .facil section, footer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.course-info article:hover, article.facil-info:hover, .modal article:hover, .life-travel article:hover {
+		scale:1.1;
+		border-color: #d90429;
+	}
+
+	.course-info article, article.facil-info, .modal article:hover, .life-travel article:hover {
+		transition: scale 500ms ease-in-out 250ms;
+	}
+
+	button.contact:hover {
+		opacity: 1;
+	}
+
+	:modal {
+		height:60%;
+		width:80%;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+	:modal {
+		height:70%;
+		width:70%;
+	}
+
+	.nav {
+		border-radius: 10px;
+	}
+}
+
+@media (min-width: 1500px) {
+	body {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	
+	:modal {
+		height:83%;
+		width:60%;
+	}
+	
+	.nav {
+		border-radius: 10px;
+	}
+}
+
+@media (min-width: 2000px) {
+	body {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+	
+	:modal {
+		height:75%;
+		width:40%;
+	}
+	
+	.nav {
+		border-radius: 10px;
+	}
+}
+/* Alexander: A vast majority of my work is used intandem with the MDN documentation */
+
+/* Johan's Form in nav-facilities CSS*/
+
+.form {
+  padding: 20px;
+  background: radial-gradient(#000000,#d90429,#000000);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: white;
+}
+
+.form h2 {
+  margin-bottom: 10px;
+}
+
+.form p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #8f0015;
+}
+
+/* Footer */
+footer h5 {
+	margin-bottom: 2%;
+}
+
+footer p {
+	font-size: 80%;
+	margin-top: 0%;
+}
+
+footer {
+	border: solid #ef233c 3px;
+	margin: 5%;
+}
+
+footer a {
+	color:#EDF2F4;
+}

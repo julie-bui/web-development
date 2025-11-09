@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Navigation & Facilities</title>
+		<link href='../style.css' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+		<header>
+			<h2>Navigation & Facilities</h1>
+			<nav>
+				<details class='nav back-home'>
+					<summary>
+						<a href='../index.html'>
+							<span></span>
+						</a>
+					</summary>
+
+					<details>
+						<summary>
+							<a href='../course-info/course-information.html'>
+								<b>Course Information</b>
+							</a>
+						</summary>
+						<a href='../course-info/course-information.html#ci-overview'>Course Overview</a><br>
+						<a href='../course-info/course-information.html#ci-course'>Why choose CS Foundation</a><br>
+						<a href='../course-info/course-information.html#ci-assess'>Teaching & Assessments</a><br>
+						<a href='../course-info/course-information.html#ci-modules'>Module Information</a>
+					</details>
+
+					<details>
+						<summary>
+							<a href=''>
+								<b>Uni Life & Travel</b>
+							</a>
+						</summary>
+						<a href='uni-life/uni-life.html#uni-campus'>The University campus</a><br>
+						<a href='uni-life/uni-life.html#student-life'>City Studnet Life</a><br>
+						<a href='uni-life/uni-life.html#student-feedback'>Student Feedback</a>
+					</details>
+
+				</details>
+			</nav>
+
+			<figure>
+				<img src='../images/navigation.jpg' alt='A picture of City university'/>
+			</figure>
+		</header>
+
+		<main>
+		<!-- General layout subject to change -->
+			<section id='about-campus' class='life-travel'>
+				<h3></h3>
+				<div>
+					<article class='facil-info'>
+						<h2>Facility</h2>
+						<p>Within all of our campus, we ensure that our students are comforted with numerous amount of spaces availabvble all across our campuses to relax and to also be productive. We have multiple cafe in our main campus including vending machines around to ensure that our students are able to purchase snacks, as we do consider about cost of living and student expenses.</p>
+
+            <p>There are countless amount of study areas for our students where they can do individual and group work across all of our campuses, to ensure that our students are able to get the best out of the space available.</p>
+
+            <p>Our library services are available within all of our campuses to ensure that our students at City hgain the support and resources they need for their studies. We ensured that our libraries have resources for every topic and modules touched upon our multiple courses within our University. Our libraries also have printing and computer services for our students to utilise for their own need. We make sure that we have everything for students to be successful.</p>
+					</article>
+
+					<article class='facil-info'>
+						<img src='../images/DrysdaleBuilding2.jpg' scale='0.3'/>
+					</article>
+
+					<article class='facil-info'>
+						<h2>Navigation</h2>
+						<p>We have our own personalised navigation system, which can be found at the end of this page right besides the map or you can <a href=https://clients.mapsindoors.com/cul/venue>CLICK HERE</a> which will direct you to our web version. This helps students to get around the campus if they are unfamiliar with a certain room or space they are going to, or even people who come visit our campus on open days since our campus is large due to the many buldings and floors there are.</p>
+					</article>
+				</div>
+				
+			</section>
+			
+			<section class='form'>
+				<h2 class='title'>Form</h2>
+        <p>Use the form below to ask us a question and see whether we can help you.</p>
+
+        <form id='form'>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+			</section>
+
+
+			<section id='citynav' class='facil wrapper'>
+				<iframe class='city-nav' src='https://clients.mapsindoors.com/cul/venues'></iframe>
+			</section>
+		</main>
+
+		<footer>
+			<section class='contact wrapper'>
+				<h5>Contact Information</h5>
+				<button class='contact open-modal'></button>
+
+				<dialog class='modal'>
+					<section class='dev-contact'>
+						<h3>Website Developers</h3>
+						<article class='alexander-contact'>
+							<h3>Smolowitz, Alexander</h3>
+							<p>Alexander.Smolowitz@city.ac.uk</p>
+						</article>
+
+						<article class='julie-contact'>
+							<h3>Bui, Julie</h3>
+							<p>Julie.Bui.2@city.ac.uk</p>
+						</article>
+
+						<article class='johan-contact'>
+							<h3>Kazi Akter, Johan</h3>
+							<p>Johan.Kazi-Akter@city.ac.uk</p>
+						</article>
+
+						<article class='uzy-contact'>
+							<h3>Muqadas, Mohammed</h3>
+							<p>Mohammed.Muqadas@city.ac.uk</p>
+						</article>
+
+						<article class='tharun-contact'>
+							<h3>Thiruchelvam, Tharun</h3>
+							<p>Tharun.Thiruchelvam@city.ac.uk</p>
+						</article>
+
+					</section>
+					<form method='dialog'>
+						<button class='close-modal'>Close</button>
+					</form>
+				</dialog>
+			</section>
+
+			<section class='wrapper'>
+				<a href='https://www.city.ac.uk/about/find-contact/find'>
+					<h5>Find us</h5>
+				</a>
+				<p>City, University of London,<br>Northampton Square, London,<br>EC1V 0HB</p>
+			</section>
+		</footer>
+
+		<script src='../script.js'></script>
+	</body>
+</html>

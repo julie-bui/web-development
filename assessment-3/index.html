@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+	  <title>replit</title>
+	  <link href='style.css' rel='stylesheet' type='text/css' />
+	</head>
+	<body>
+		<header>
+			<h2>Welcome to City University's Home Page !</h1>
+			<nav>
+				<details class='nav'>
+					<summary>
+						<b>Navigation Bar</b>
+					</summary>
+					
+					<details>
+						<summary>
+							<a href='course-info/course-information.html'>
+								<b>Course Information</b>
+							</a>
+						</summary>
+						<a href='course-info/course-information.html#ci-overview'>Course Overview</a><br>
+						<a href='course-info/course-information.html#ci-course'>Why choose CS Foundation</a><br>
+						<a href='course-info/course-information.html#ci-assess'>Teaching & Assessments</a><br>
+						<a href='course-info/course-information.html#ci-modules'>Module Information</a>
+					</details>
+					
+					<details>
+						<summary>
+							<a href='uni-life/uni-life.html'>
+								<b>Uni Life & Travel</b>
+							</a>
+						</summary>
+						<a href='uni-life/uni-life.html#uni-campus'>The University campus</a><br>
+						<a href='uni-life/uni-life.html#student-life'>City Studnet Life</a><br>
+						<a href='uni-life/uni-life.html#student-feedback'>Student Feedback</a>
+					</details>
+					
+					<details>
+						<summary>
+							<a href='nav-facil/navigation-facilities.html'>
+								<b>Navigation & Facilities</b>
+							</a>
+						</summary>
+						<a href='nav-facil/navigation-facilities.html#citynav'>City Navigation</a><br>
+						<a href='nav-facil/navigation-facilities.html#form'>Forum</a><br>
+						<a href='nav-facil/navigation-facilities.html#about-campus'>About the Campus</a>
+					</details>
+					
+				</details>
+			</nav>
+			
+			<figure>
+				<img src='images/CityUniversity.jpg' alt='a picture of city university'/>
+			</figure>
+		</header>
+		
+		<main>
+		<!-- General layout subject to change -->
+			<section class='course-info wrapper'>
+				<h3 class='title'>Course Information</h3>
+				<article>
+					<h4>Course Overview</h4>
+					<p>Supplies detailed information regarding our CS foundation year program with us at City.</p>
+				</article>
+
+				<article>
+					<h4>Why choose Foundation Program</h4>
+					<p>Supplies detailed information regarding on why we recommend why choose City and do Foundation Year</p>
+				</article>
+
+				<article>
+					<h4>Modules & Teaching with Assessment</h4>
+					<p>Supplies detailed information regarding Course Module and Assessment</p>
+				</article>
+			</section>
+			
+			<section class='life-travel'>
+				<div>
+					<a href='uni-life/uni-life.html'>
+						<article>
+							<h4>University Life & Travel</h4>
+							<p>Supplies a brief information regarding our Campus, What it is like as a City Student, Feedback from Current and Alumni Students</p>
+						</article>
+					</a>
+				</div>
+			</section>
+
+			<section class='facil wrapper'>
+				<h3 class='title'>Navigation & Facilites</h3>
+				<section>
+					<article>
+						<img src='images/navigation.jpg'/>
+					</article>
+					
+					<article class='facil-info'>
+						<h4>Where you can Find Us</h4>
+						<p>For more information, you can visit us in campus in our Northampton Square Campus, where we have a lot of support available.</p>
+					</article>
+				</section>
+
+				<article>
+					<iframe class='home-iframe' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.244074082101!2d-0.10525758681189805!3d51.52708300914635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b5a5a0bc22b%3A0x59881773da7105fb!2sNorthampton%20Square%2C%20London%2C%20UK!5e0!3m2!1sen!2sau!4v1702562560179!5m2!1sen!2sau" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+					<!-- Sourced from google maps embeded link -->
+				</article>
+			</section>
+		</main>
+		
+		<footer>
+			<section class='contact wrapper'>
+				<h5>Contact Information</h5>
+				<button class='contact open-modal'></button>
+				
+				<dialog class='modal'>
+					<section class='dev-contact'>
+						<h3>Website Developers</h3>
+						<article class='alexander-contact'>
+							<h3>Smolowitz, Alexander</h3>
+							<p>Alexander.Smolowitz@city.ac.uk</p>
+						</article>
+						
+						<article class='julie-contact'>
+							<h3>Bui, Julie</h3>
+							<p>Julie.Bui.2@city.ac.uk</p>
+						</article>
+						
+						<article class='johan-contact'>
+							<h3>Kazi Akter, Johan</h3>
+							<p>Johan.Kazi-Akter@city.ac.uk</p>
+						</article>
+						
+						<article class='uzy-contact'>
+							<h3>Muqadas, Mohammed</h3>
+							<p>Mohammed.Muqadas@city.ac.uk</p>
+						</article>
+						
+						<article class='tharun-contact'>
+							<h3>Thiruchelvam, Tharun</h3>
+							<p>Tharun.Thiruchelvam@city.ac.uk</p>
+						</article>
+
+					</section>
+					<form method='dialog'>
+						<button class='close-modal'>Close</button>
+					</form>
+				</dialog>
+			</section>
+
+			<section class='wrapper'>
+				<a href='https://www.city.ac.uk/about/find-contact/find'>
+					<h5>Find us</h5>
+				</a>
+				<p>City, University of London,<br>Northampton Square, London,<br>EC1V 0HB</p>
+			</section>
+		</footer>
+		
+	  <script src='script.js'></script>
+	</body>
+</html>

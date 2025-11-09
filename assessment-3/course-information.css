@@ -1,0 +1,289 @@
+/* Page layout & Sizing*/
+* {
+  box-sizing: border-box;
+  text-decoration: none; 
+}
+
+html, body {
+  margin: 0;
+  margin-bottom: 2%;
+  background-color: #000000;
+}
+
+/* Header */
+header, h3, h5{
+  text-align: center;
+  color: #EDF2F4;
+}
+
+/* Navigation bar */
+.back-home summary a span {
+  content: url('../images/home-button-white-icon.png');
+  width: 5%;
+  vertical-align: middle;
+}
+
+.back-home summary::marker {
+  content: none;
+}
+
+.nav {
+  background-image: linear-gradient(#D90429 60%,#000000);
+  background-repeat: no-repeat;
+  background-size:contain;
+  line-height: 400%;
+  vertical-align: middle; 
+  margin-bottom: 1%;
+}
+
+/* Main */
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.course-overview, .course-overview-text, .foundation-course-text {
+  margin: 5%;
+  border-radius: 10px;
+  border: solid #EDF2F4 2px;
+  padding: 5%;
+  background-color: #EDF2F4;
+  text-align: center;
+}
+
+.course-overview-text, .foundation-course-text {
+  padding: 25px;
+  line-height: 25px;
+}
+
+.course-overview {
+  background-image: radial-gradient(farthest-corner, #D90429 5%, #000000 85%);
+}
+
+.foundation-course {
+  background-image: url(../images/comp-sci-class.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1%;
+  border-radius: 10px;
+  margin: 5%;
+	/* Alexander's suggestion for this: */
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.foundation-course h3 {
+  background-color: #EDF2F4;
+  color: #000000;
+  padding: 1%;
+  border-radius: 10px;
+  margin: 5%
+}
+
+.modules, .modules-text, .teach-assess, .teach-assess-text {
+  text-align: center;
+  color: #000000;
+  margin: 5%;
+  border: solid #EDF2F4 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #EDF2F4;
+}
+
+.modules, .teach-assess {
+  background: radial-gradient(#000000, #D90429, #000000);
+}
+
+.modules h3, .teach-assess h3 {
+  color: #000000;
+}
+
+.modules-text, .teach-assess-text {
+  padding: 20px;
+  line-height: 20px;
+}
+
+footer {
+  text-align: center;
+  color: #EDF2F4;
+}
+
+/* Modal */
+button.contact {
+  scale: 2;
+  padding:0%;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+button.contact::before {
+  content: '📧';
+}
+
+
+:modal {
+  background-image:  radial-gradient(#000000,#d90429,#000000);
+  background-repeat: no-repeat;
+  color:#EDF2F4;
+  width: 80%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+.modal article{
+  background-color: #EDF2F4;
+  color:#000000;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.dev-contact p::before {
+  content:'📧';
+}
+
+.dev-contact article h3, .dev-contact p {
+  margin: 0;
+}
+
+::backdrop {
+  background-image: linear-gradient(#000000,transparent);
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (min-width: 700px) {
+
+  iframe {
+    height: 400px;
+    width: 700px;
+  }
+
+  .course-overview {
+    padding: 20px;
+  }
+
+  .foundation-course-text {
+    padding: 120px;
+  }
+
+  .foundation-course h3 {
+    width: 400px;
+    margin-left: 30%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .modules, .teach-assess {
+    flex: 1;
+    padding: 20px;
+    margin-top: 1%;
+  }
+
+  .modules {
+    margin-right: 1%;
+  }
+
+  .modules-text, .teach-assess-text {
+    padding: 50px;
+  }
+
+  main .wrapper, footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer section.wrapper {
+    flex: 1;
+    flex-basis: 20%;
+    margin: 1%;
+  }
+
+  .course-overview-text:hover, .foundation-course-text:hover, .modules-text:hover, .teach-assess-text:hover, .modal article:hover {
+    scale:1.1;
+    border-color: #d90429;
+  }
+
+  .course-overview-text, .foundation-course-text, .modules-text, .teach-assess-text, .modal article:hover {
+    transition: scale 500ms ease-in-out 250ms;
+  }
+
+  button.contact:hover {
+    opacity: 1;
+  }
+
+  :modal {
+    height:60%;
+    width:80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  :modal {
+    height:70%;
+    width:70%;
+  }
+
+  .nav {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  :modal {
+    height:83%;
+    width:60%;
+  }
+
+  .nav {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  :modal {
+    height:75%;
+    width:40%;
+  }
+
+  .nav {
+    border-radius: 10px;
+  }
+}
+
+/* Footer */
+footer h5 {
+	margin-bottom: 2%;
+}
+
+footer p {
+	font-size: 80%;
+	margin-top: 0%;
+}
+
+footer {
+  border: solid #ef233c 3px;
+  margin: 5%;
+}
+
+footer a {
+	color:#EDF2F4;
+}
